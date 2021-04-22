@@ -1,0 +1,14 @@
+{{define "external.source" -}}
+<html>
+    <body>
+        <p>Spruce M4 Test External</p>
+        <p>Go HTML Template</p>
+        <h1>The text field is: {{.textField}}</h1>
+        <h2>The number field is: {{.numberField}}</h2>
+    </body>
+</html>
+{{end}}
+
+{{define "external.url" -}}
+ext-go-{{.textField}}.html
+{{- end}}
