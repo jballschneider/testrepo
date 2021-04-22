@@ -1,0 +1,43 @@
+{
+	"configVersion": "1",
+	"https": true,
+	"templateVersion": 8,
+	"locales": [
+		"en"
+	],
+	"features": [
+		{
+			"name": "KG Go EPS",
+			"streamLabel": "account-11701892/spruce-m4test-pages",
+			"goTemplateEntityPageSet": {
+				"template": "eps.source",
+				"urlTemplate": "eps.url"
+			}
+		},
+		{
+			"name": "KG Soy EPS",
+			"streamLabel": "account-11701892/spruce-m4test-pages",
+			"entityPageSet": {
+				"urlTemplate": "soy.eps.url",
+				"templates": {
+					"desktop": "soy.eps.content"
+				}
+			}
+		},
+		{
+			"name": "External Go EPS",
+			"streamLabel": "account-11701892/external-spruce-m4test",
+			"goTemplateEntityPageSet": {
+				"template": "external.source",
+				"urlTemplate": "external.url"
+			}
+		}
+	],
+	"ci_config": {
+		"output_directories": ["templates", "desktop"],
+		"build_setup_cmd": "echo setup",
+		"build_cmd": "echo hello",
+		"serve_setup_cmd": "echo setup",
+		"serve_cmd": "echo serve"
+	}
+}
