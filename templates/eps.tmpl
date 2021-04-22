@@ -3,13 +3,13 @@
     <body>
         <p>Spruce M4 Test EPS:</p>
         <p>Go HTML Template</p>
-        <h1>The name is: {{.name}} ({{.locale}})</h1>
+        <h1>The name is: {{.name}} ({{.meta.locale}})</h1>
         <h2>The description is: {{.description}}</h2>
-        <p>The external entity id is: {{.externalEntityId}}</p>
+        <p>The external entity id is: {{.id}}</p>
     </body>
 </html>
 {{end}}
 
 {{define "eps.url" -}}
-kg-go-{{.locale}}-{{.entityId}}.html
+kg-go-{{.meta.locale}}-{{.uid}}.html
 {{- end}}

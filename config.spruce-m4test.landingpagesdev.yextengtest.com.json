@@ -8,7 +8,7 @@
 	"features": [
 		{
 			"name": "KG Go EPS",
-			"streamLabel": "account-11701892/spruce-m4test-pages",
+			"streamLabel": "pages-locations",
 			"goTemplateEntityPageSet": {
 				"template": "eps.source",
 				"urlTemplate": "eps.url"
@@ -16,20 +16,12 @@
 		},
 		{
 			"name": "KG Soy EPS",
-			"streamLabel": "account-11701892/spruce-m4test-pages",
+			"streamLabel": "pages-locations",
 			"entityPageSet": {
 				"urlTemplate": "soy.eps.url",
 				"templates": {
 					"desktop": "soy.eps.content"
 				}
-			}
-		},
-		{
-			"name": "External Go EPS",
-			"streamLabel": "account-11701892/external-spruce-m4test",
-			"goTemplateEntityPageSet": {
-				"template": "external.source",
-				"urlTemplate": "external.url"
 			}
 		}
 	],
