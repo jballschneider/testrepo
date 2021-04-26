@@ -23,14 +23,6 @@
 					"desktop": "soy.eps.content"
 				}
 			}
-		},
-		{
-			"name": "External Go EPS",
-			"streamLabel": "pages-locations",
-			"goTemplateEntityPageSet": {
-				"template": "external.source",
-				"urlTemplate": "external.url"
-			}
 		}
 	],
 	"ci_config": {
